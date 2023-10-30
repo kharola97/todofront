@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-tas{
+    height: calc(100vh -100px);
+   width: 100%;
+}
+
+.main-create{
+    display: flex;
+    
+    flex-direction: column;
+    height: 700px;
+   border: 2px solid black;
+    width: 600px;
+    margin: 1vw 35vw; 
+    padding: 2vw 4vw;
+    border-radius: 20px;
+    box-shadow: 0 0 30px -2px black;
+}
+
+.main-create h2{
+   margin: 2vw 4.9vw;
+    font-size: 2.2vw;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 2vw;
+}
+.title label {
+    font-size: 1.4vw;
+}
+
+.title input {
+    padding: 1vw 1.7vw;
+    font-size: 1vw;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 2vw;
+}
+.description label{
+    font-size: 1.4vw;
+}
+.description textarea{
+    height: 8vw;
+    resize: none;
+    font-size: 1vw;
+    padding: 1vw 1.7vw;
+}
+
+.main-create button {
+    font-size: 2vw;
+    margin: 1vw 6vw;
+    padding: 1vw 2vw;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #fbb903;
+    border: none;
+}
+
+.main-create button:hover{
+    transform: scale(1.2);
+}
+
+
+@media (max-width:930px){
+    .main-create{
+        margin-top: 14vw;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        align-items: center;
+        width: 70%;
+        margin-left: 14vw;
+    }
+    .main-create h2{
+        padding: 2vw 2vw;
+        font-size: 4vw;
+    }
+    .title{
+        display: flex;
+        margin: 2vw 4vw;
+    }
+
+    .title label{
+        font-size: 4vw;
+    }
+    .title input{
+        font-size: 3vw;
+        padding: 2vw 3vw;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+   .description label {
+    font-size: 4vw;
+   }
+   .description textarea{
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    height: 15vw;
+    
+   }
+   .main-create button{
+    font-size: 3vw;
+    margin: 4vw 15vw;
+   }
+}

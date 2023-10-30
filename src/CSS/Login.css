@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-login{
+    height: calc(100vh - 100px);
+    width: 100%;
+   
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    
+}
+.login-form{
+    margin: 2.5vw 0;
+    border:  2px solid black;
+    height: 70%;
+    border-radius: 12px;
+    box-shadow: 0 0 50px -2px #fbb903;
+}
+.login-form h1 {
+    margin: 1vw 4.5vw;
+    font-size: 3.2vw;
+    color : #fbb903
+}
+.form-elements{
+    display:  flex;
+    flex-direction: column;
+    padding: 0 1vw;
+    
+}
+.form-elements input{
+    margin: 1vw 0;
+    height: 100%;
+    width: 100%;
+   font-size: 1vw;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+}
+.form-elements button{
+    padding: 1vw 1vw;
+    margin:  1vw 4vw;
+    border-radius: 15px;
+  background-color: #fbb903;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+.form-elements h3 {
+    margin-top: 1vw;
+}
+
+@media (max-width:600px){
+   .login-form{
+    background-color: green;
+   }
+  .login-form h1{
+    font-size: 8vw;
+    text-align: center;
+  }
+  .form-elements{
+    padding: 4vw 4vw;
+  }
+  .form-elements input{
+    margin: 4vw 0;
+    font-size: 2vh;
+  }
+
+  .form-elements button{
+    padding: 1.5vh 3vh;
+    font-size: 4vw;
+  }
+
+  .form-elements h3{
+    margin-top: 3vh;
+  }
+}

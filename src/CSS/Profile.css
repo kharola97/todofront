@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profile-main{
+    height: calc(100vh - 100px);
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-around;
+    
+}
+.create > img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.pending > img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.completed > img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.alltasks > img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.create, .pending, .completed, .alltasks{
+    height: 80%;
+    width: 100%;
+}
+
+.profile-main button {
+   font-size: 1.6vw;
+   padding: 1vw 2vw;
+   margin-top: 1vw;
+   border-radius: 10px;
+   cursor: pointer;
+   border: none;
+}
+.create button {
+    margin-left: 3.5vw;
+    background-color:  #bcd5fd;
+}
+.create button:hover{
+    transform: scale(1.2);
+}
+
+.pending button{
+    margin-left: 4.8vw;
+    background-color: #fe9c6b;
+}
+.pending button:hover{
+    transform: scale(1.2);
+}
+
+.completed button {
+    margin-left: 3.9vw;
+    background-color: #ff4f5a;
+}
+.completed button:hover{
+    transform: scale(1.2);
+}
+
+.alltasks button {
+    margin-left: 8vw;
+    background-color: #e49edd;
+}
+.alltasks button:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .profile-main {
+        height: calc(100vh - 100px);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+      
+    }
+    .profile-main button {
+        
+        font-size: 4vw;
+        padding: 3vw 4vw;
+        margin-left: 4vw;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+     }
+     
+     
+     .profile-main img{
+        display: none;
+     }
+  }

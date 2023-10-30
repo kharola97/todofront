@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.main-task{
+    width: 70%;
+  margin: 1vw 15vw;
+  padding: 1vw 2vw;
+  border: 2px solid black;
+  border-radius: 10px;
+   background-color:  rgba(204, 219, 225, 0.834);
+}
+
+table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #333;
+    color: white;
+    height: 2vw;
+    text-transform: uppercase;
+    
+}
+
+th{
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 1.4vw;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+tr{
+    border-bottom: 1px solid black;
+    
+}
+td{
+   font-weight: 600;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1vw 1vw;
+}
+
+td button{
+    margin-left: 1.2vw;
+    background-color: lightgreen;
+    padding: 2px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover{
+    transform: scale(1.2);
+}
