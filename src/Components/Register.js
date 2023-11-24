@@ -3,7 +3,9 @@ import React, {useState} from 'react'
 import { Link,useNavigate} from 'react-router-dom'
 
 import "../CSS/Register.css"
+
 import axios from 'axios';
+const base_url = "https://todolist-c9ih.onrender.com"
 const Register = () => {
     const navigate = useNavigate()
     const [formData, setFormData] = useState({
@@ -21,7 +23,8 @@ const Register = () => {
       }
       const handleSubmit = async(e) =>{
         e.preventDefault()
-        const response = await axios.post(`http://localhost:4000/register`, formData, {
+        console.log("hi")
+        const response = await axios.post(`${base_url}/register`, formData, {
         headers: {
           "Content-Type": "application/json"
         }

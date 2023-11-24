@@ -3,7 +3,7 @@ import "../CSS/Login.css"
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom'
 
-
+const base_url = "https://todolist-c9ih.onrender.com"
 
 const Login = ({setIsLoggedIn}) => {
   
@@ -20,7 +20,7 @@ const Login = ({setIsLoggedIn}) => {
 
   const handleSubmit = async(e)=>{
     e.preventDefault()
-    const response = await axios.post("http://localhost:4000/login", formData,{
+    const response = await axios.post(`${base_url}/login`, formData,{
         headers:{
           "Content-Type" : "application/json"
         }

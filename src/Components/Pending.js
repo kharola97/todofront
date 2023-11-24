@@ -5,6 +5,8 @@ import {jwtDecode} from 'jwt-decode';
 import "../CSS/Pending.css"
 import { useNavigate } from 'react-router-dom'
 
+const base_url = "https://todolist-c9ih.onrender.com"
+
 const Pending = () => {
     const [taskData, setTaskData] = useState([]);
     const navigate = useNavigate()
@@ -19,7 +21,7 @@ const Pending = () => {
             const userId = decoded.id
            
             
-            const response = await axios.get(`http://localhost:4000/gettasks/${userId}`);
+            const response = await axios.get(`${base_url}/${userId}`);
             const res = response.data; 
             
            if(res.status===false || !res){
@@ -49,7 +51,7 @@ const Pending = () => {
             const userId = decoded.id
            
             
-            const response = await axios.post(`http://localhost:4000/taskdone/${userId}/${taskId}`,{},{
+            const response = await axios.post(`${base_url}/${userId}/${taskId}`,{},{
                 headers : {
                     "Content-Type" :"application/json",
                     "token" : token

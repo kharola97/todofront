@@ -5,6 +5,8 @@ import {jwtDecode} from 'jwt-decode';
 
 import {  useNavigate } from 'react-router-dom'
 
+const base_url = "https://todolist-c9ih.onrender.com"
+
 const CreateTask = () => {
     const navigate = useNavigate()
     const [details, setDetails] = useState({
@@ -23,7 +25,7 @@ const CreateTask = () => {
             const decoded = jwtDecode(token)
             const userId = decoded.id
             console.log(userId,)
-            const response = await axios.post(`http://localhost:4000/task/${userId}`, details,{
+            const response = await axios.post(`${base_url}/task/${userId}`, details,{
                 headers:{
                     "Content-Type" : "application/json",
                     "token" : token

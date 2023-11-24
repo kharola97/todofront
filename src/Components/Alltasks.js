@@ -3,6 +3,8 @@ import axios from 'axios';
 import {jwtDecode} from 'jwt-decode';
 import "../CSS/Pending.css"
 
+
+const base_url = "https://todolist-c9ih.onrender.com"
 const Alltasks = () => {
     const [taskData, setTaskData] = useState([]);
   
@@ -17,7 +19,7 @@ const Alltasks = () => {
             const userId = decoded.id
            
             
-            const response = await axios.get(`http://localhost:4000/alltasks/${userId}`);
+            const response = await axios.get(`${base_url}/alltasks/${userId}`);
             const res = response.data; 
             
            if(res.status===false || !res){
